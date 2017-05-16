@@ -1,4 +1,4 @@
-## PHP技术群`174303524`
+## PHP技术QQ群`174303524`
 ---
 官方博客：[good-partner.github.io](https://good-partner.github.io)
 
@@ -20,3 +20,9 @@ $ jekyll s
 3. 发起请求后，页面会出现`Merge pull request`绿色按钮，点击后即可完成更新。
 
 ![Alt text](/images/2017/0516/merge-pull.png "接受更新")
+
+### 如何向organization贡献自己的代码
+
+1. fetch自己github上的远程代码，pull更新后开始修改。
+2. commit后push到自己的远程github仓库。
+2. 发起合并请求，左边选择organization的相应分支，右侧选择自己的相应的分支（同更新相反）。
