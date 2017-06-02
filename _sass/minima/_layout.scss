@@ -8,6 +8,7 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
+  background: #cde;
 }
 
 .site-title {
@@ -106,8 +107,9 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  border-top: 6px solid $grey-color-light;
+  padding-top: $spacing-unit / 2 ;
+  // background: #cde;
 }
 
 .footer-heading {
