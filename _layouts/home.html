@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">文章列表</h1>
+  <!-- <h1 class="page-heading">文章列表</h1> -->
 
   {{ content }}
 
@@ -21,6 +21,9 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+  {% include category.html %}
+  {% include tag.html %}
+  <!-- <p class="rss-subscribe">订阅 <a href="{{ "/feed.xml" | relative_url }}">RSS</a></p> -->
 
 </div>
