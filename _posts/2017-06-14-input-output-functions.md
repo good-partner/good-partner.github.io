@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "sprintf,fprintf,sscanf,fscanf"
+title:  "sprintf,fprintf,sscanf,fscanf,printf"
 date:   2017-05-17 12:00:10 +0800
-categories: css
-tags: 内容过长
+categories: php
+tags: php
 ---
 
 ### sprintf — Return a formatted string
