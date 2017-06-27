@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "JavaSctipt 闭包"
+title:  "JavaScript 闭包"
 date:   2017-06-26 12:00:10 +0800
-categories: javasctipt
+categories: javascript
 tags: 闭包 closure
 ---
 
