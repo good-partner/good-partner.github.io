@@ -43,38 +43,6 @@ function html_decode(str)
 }
 ```
 
-#### 采集页面时获取页面中的js变量
-
-
-```javascript
-//正常情况只需要以分号结尾，
-//但是如果变量中出现了英文分号，需要找到唯一结尾结束符，例如 ‘};’
-//也就是需要多向前匹配一个字符或者两个字符
-$patten="'var cinemasJson =(.*?)};'is";
-echo getVarInjs($txt,$patten, true);
-
-//正常情况只需要以分号结尾
-$patten="'var districtJson =(.*?);'is";
-echo getVarInjs($txt,$patten);
-
-
-function getVarInjs($str,$patten,$withType = true)
-{
-    $patten_js  = $withType?"'<\s*script[^>]*[^/]>(.*?)<\s*/\s*script\s*>'is":"'<\s*script\s*>(.*?)<\s*/\s*script\s*>'is";
-    preg_match_all($patten_js, $str, $matches);
-
-    foreach($matches[1] as $m)
-    {
-        //过滤取值
-        preg_match($patten,$m,$result);
-        if(!empty($result[1]))
-            return $result[1];
-    }
-    return false;
-}
-
-```
-
 #### 复制到粘贴板
 
 ```javascript
